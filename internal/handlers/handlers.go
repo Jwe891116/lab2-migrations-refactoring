@@ -1,7 +1,10 @@
+// Package declaration - defines as the handlers package
+// Contains http handler functions that process web requests
 package handlers
 
+//Import necessary packages
 import (
-	"net/http"
+	"net/http" //For http related types and status code
 )
 
 // Home handles requests to the root path
@@ -16,7 +19,7 @@ func About(w http.ResponseWriter, r *http.Request) {
 
 // Contact handles requests to the /contact path
 func Contact(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Cell #: +501 000-0000\nEmail: 2005112848@ub.edu.bz\nGitHub: github.com/JWEmmanuel89\n"))
+	w.Write([]byte("Cell #: +501 000-0000\nEmail: 2005112848@ub.edu.bz\nGitHub: github.com/Jwe891116\n"))
 }
 
 // Calculate handles requests to the /calculate path
