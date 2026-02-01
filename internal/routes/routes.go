@@ -1,9 +1,17 @@
+// Package declaration - defines as the routes package
+// Contains http route functions that process web requests
 package routes
 
+//Import necessary packages
 import (
-	"net/http"
+	"net/http" //For ServeMux, Handler, and routing functionality
 
+	// Internal package imports (following Go module path conventions)
+	// These are local packages within the same module
+
+	//Contains handler functions
 	"github.com/Jwe891116/lab2-JoshuaEmmanuel/internal/handlers"
+	//Contains middlerware functions
 	"github.com/Jwe891116/lab2-JoshuaEmmanuel/internal/middleware"
 )
 
