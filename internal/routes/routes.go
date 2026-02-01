@@ -24,15 +24,15 @@ func SetupRoutes(mux *http.ServeMux) *http.ServeMux {
 
 	mux.Handle("/about", middleware.LoggingMiddleware(
 		middleware.DurationMiddleware(
-			http.HandlerFunc(handlers.Home))))
+			http.HandlerFunc(handlers.About))))
 
 	mux.Handle("/contact", middleware.LoggingMiddleware(
 		middleware.DurationMiddleware(
-			http.HandlerFunc(handlers.Home))))
+			http.HandlerFunc(handlers.Contact))))
 
 	mux.Handle("/calculate", middleware.LoggingMiddleware(
 		middleware.DurationMiddleware(
-			http.HandlerFunc(handlers.Home))))
+			http.HandlerFunc(handlers.Calculate))))
 
 	return mux
 }
